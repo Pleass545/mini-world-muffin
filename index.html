@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Tracker - 迷你世界</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            min-width: 800px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .issue-item {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 30px;
+        }
+
+        .header-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        /* 统一的方形头像样式 */
+        .icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+            object-fit: cover;
+            margin-right: 12px;
+            flex: 0 0 auto;
+        }
+
+        /* 公告喇叭图标，同样保持方形圆角 */
+        .icon-bell {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef4fa;
+            border-radius: 4px;
+        }
+
+        .icon-bell svg {
+            width: 19px;
+            height: 19px;
+        }
+
+        .version-text {
+            font-size: 14px;
+            color: #5c6c7c;
+            font-weight: 500;
+        }
+
+        .main-content {
+            font-size: 26px;
+            font-weight: 700;
+            color: #173f5f;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .body-content {
+            font-size: 18px;
+            color: #3a4a5a;
+            line-height: 1.9;
+            margin: 14px 0 0;
+        }
+
+        .body-content + .body-content {
+            margin-top: 8px;
+        }
+
+        .sub-content {
+            font-size: 18px;
+            color: #3a4a5a;
+            line-height: 1.9;
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ID 0 公告（保持不变） -->
+        <div class="issue-item">
+            <div class="header-info">
+                <div class="icon-bell">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#173f5f" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 11v2a1 1 0 0 0 1 1h2l4 4V6L6 10H4a1 1 0 0 0-1 1z"/>
+                        <path d="M15.5 8.5a5 5 0 0 1 0 7"/>
+                        <path d="M18.5 5.5a9 9 0 0 1 0 13"/>
+                    </svg>
+                </div>
+                <span class="version-text">ID:0 · 公告</span>
+            </div>
+            <h1 class="main-content">迷你世界0.52.1私服正在研发中……</h1>
+            <p class="sub-content">预计2026.11.21上线测试</p>
+        </div>
+
+        <!-- ID 10（保持不变，包含QQ群） -->
+        <div class="issue-item">
+            <div class="header-info">
+                <img src="http://p4.a.yximgs.com/uhead/AB/2026/10/02/20/BMjAyNjEwMDIyMDQzMzFfNDIzOTMwOTY2Nl8yX2hkMTkxXzE1MQ==_s.jpg"
+                     alt="muffin" class="icon">
+                <span class="version-text">ID:10 · muffin</span>
+            </div>
+            <p class="body-content">大家好，我是muffin。这个网站是记录开发记录，以及在开发过程中所遇到的Bug。Bug在这里都会公开。目前只制作了0.52.1等上线后一定会做个网站，专门用于发帖子之类的……</p>
+            <p class="body-content">当然，灵感全部都来自于隔壁的Minecraft Database。也算是致敬迷你的老传统了。当然，我打算开发一个我自己的客户端。所以这一定程度上也会减慢我私服的开发进度。</p>
+            <p class="body-content">QQ群：1131926832</p>
+        </div>
+
+        <!-- ID 1000 -->
+        <div class="issue-item">
+            <div class="header-info">
+                <img src="https://img1.baidu.com/it/u=3391164949,3779155081&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500"
+                     alt="Icon" class="icon">
+                <span class="version-text">《迷你世界》：0.52.1/1000</span>
+            </div>
+            <h1 class="main-content">我的家园图鉴无法正常解锁</h1>
+        </div>
+
+        <!-- ID 1001 -->
+        <div class="issue-item">
+            <div class="header-info">
+                <img src="https://img1.baidu.com/it/u=3391164949,3779155081&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500"
+                     alt="Icon" class="icon">
+                <span class="version-text">《迷你世界》：0.52.1/1001</span>
+            </div>
+            <h1 class="main-content">个人主页显示异常</h1>
+        </div>
+
+        <!-- ID 1002 -->
+        <div class="issue-item">
+            <div class="header-info">
+                <img src="https://img1.baidu.com/it/u=3391164949,3779155081&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500"
+                     alt="Icon" class="icon">
+                <span class="version-text">《迷你世界》：0.52.1/1002</span>
+            </div>
+            <h1 class="main-content">头像框无法解锁</h1>
+        </div>
+
+        <!-- ID 1003 -->
+        <div class="issue-item">
+            <div class="header-info">
+                <img src="https://img1.baidu.com/it/u=3391164949,3779155081&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500"
+                     alt="Icon" class="icon">
+                <span class="version-text">《迷你世界》：0.52.1/1003</span>
+            </div>
+            <h1 class="main-content">客户端角色面板UI显示异常（来自muffin破解版）</h1>
+        </div>
+
+    </div>
+
+</body>
+</html>
